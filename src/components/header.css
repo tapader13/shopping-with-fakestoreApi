@@ -1,0 +1,156 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    border-bottom: 1px solid #e2e8f0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4a5568;
+    transition: color 0.2s;
+    display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #3182ce;
+}
+
+.cart-link {
+    position: relative;
+    padding-right: 8px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e53e3e;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: #4a5568;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: color 0.2s;
+}
+
+.logout-btn:hover {
+    color: #3182ce;
+}
+
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+.cart-icon {
+    position: relative;
+    color: #4a5568;
+    display: block;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: #4a5568;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.mobile-menu-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: white;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mobile-menu-link {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4a5568;
+    padding: 8px 0;
+}
+
+.mobile-logout-btn {
+    font-size: 18px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: #4a5568;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: left;
+}
