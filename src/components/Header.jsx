@@ -54,7 +54,6 @@ export default function Header() {
 
   const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
-  // Only show cart count if we're mounted (to avoid hydration mismatch)
   const cartCount = isMounted ? cartItemCount : 0;
 
   if (location.pathname === '/login' && !isLoggedIn) {
