@@ -15,7 +15,7 @@ A modern, responsive e-commerce website built with React and the Fake Store API.
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-deployment-url.vercel.app)
+[View Live Demo](https://shopping-with-fakestore-api.vercel.app/)
 
 ## 🛠️ Technologies Used
 
