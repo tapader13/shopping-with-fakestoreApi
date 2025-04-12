@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './header.css';
-import { useLocation, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 
 export default function Header() {
   const location = useLocation();
@@ -64,7 +64,7 @@ export default function Header() {
   return (
     <header className='header'>
       <div className='header-container'>
-        <Link href='/' className='logo'>
+        <Link to='/' className='logo'>
           ShopApp
         </Link>
 
@@ -72,7 +72,7 @@ export default function Header() {
         {isLoggedIn && (
           <nav className='desktop-nav'>
             <Link
-              href='/'
+              to='/'
               className={`nav-link ${
                 location.pathname === '/' ? 'active' : ''
               }`}
@@ -80,7 +80,7 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href='/cart'
+              to='/cart'
               className={`nav-link cart-link ${
                 location.pathname === '/cart' ? 'active' : ''
               }`}
@@ -97,7 +97,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isLoggedIn && (
           <div className='mobile-nav'>
-            <Link href='/cart' className='cart-icon'>
+            <Link to='/cart' className='cart-icon'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -140,14 +140,14 @@ export default function Header() {
               <div className='mobile-menu'>
                 <div className='mobile-menu-content'>
                   <Link
-                    href='/'
+                    to='/'
                     className='mobile-menu-link'
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Home
                   </Link>
                   <Link
-                    href='/cart'
+                    to='/cart'
                     className='mobile-menu-link'
                     onClick={() => setMobileMenuOpen(false)}
                   >
