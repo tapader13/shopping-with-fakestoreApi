@@ -4,9 +4,11 @@ import Header from '../Header';
 import './home.css';
 const Home = () => {
   return (
-    <div>
+    <div className='home-container'>
       <Header />
-      <Outlet />
+      <div className='home-content'>
+        <Outlet />
+      </div>
       <footer className='footer'>
         © {new Date().getFullYear()} Shopping Website
       </footer>

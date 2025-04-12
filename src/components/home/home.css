@@ -4,4 +4,19 @@
     text-align: center;
     font-size: 14px;
     color: #718096;
+    margin-top: 10px;
+}
+
+.home-container {
+    min-height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    /* display: flex;
+    flex-direction: column;
+    min-height: 100vh; */
+}
+
+.home-content {
+    flex-grow: 1;
 }
