@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './cart.css';
 import AuthCheck from '../authcheck/AuthCheck';
+import { Link } from 'react-router';
 
 export default function CartPage() {
   const [cart, setCart] = useState([]);
@@ -62,9 +63,9 @@ export default function CartPage() {
           <div className='empty-cart'>
             <h2>Your cart is empty</h2>
             <p>Looks like you haven't added any products to your cart yet.</p>
-            <a href='/' className='continue-shopping-btn'>
+            <Link to='/' className='continue-shopping-btn'>
               Continue Shopping
-            </a>
+            </Link>
           </div>
         ) : (
           <div className='cart-grid'>

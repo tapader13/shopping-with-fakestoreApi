@@ -40,7 +40,6 @@ export default function ProductListing() {
   }, []);
 
   useEffect(() => {
-    // Filter products based on category and search query
     let result = [...products];
 
     if (selectedCategory !== 'all') {

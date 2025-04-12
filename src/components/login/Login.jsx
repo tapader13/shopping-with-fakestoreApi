@@ -71,7 +71,7 @@ export default function LoginPage() {
               onChange={(e) => setUsername(e.target.value)}
               required
             />
-            <p className='hint-text'>Try: johnd (Password: m38rmF$)</p>
+            <p className='hint-text'>Try: mor_2314 (Password: 83r5^_)</p>
           </div>
           <div className='form-group'>
             <label htmlFor='password'>Password</label>
